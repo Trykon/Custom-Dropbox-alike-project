@@ -1,0 +1,19 @@
+.nav {
+	display = inline;
+}
+.srodek table {
+	position=fixed;
+	bottom = 50px;
+	float = left;
+	float = right;
+}
+bialy {
+	color:white;
+}
+body {
+	background-image:    url(3.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+	background-color:	 gray;
+}

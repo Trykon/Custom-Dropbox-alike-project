@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filebox-login</title>
+<link rel="stylesheet" href="Bootstrap\bootstrap-3.3.5-dist\css\bootstrap.css">
+<link rel="stylesheet" href="login.css">
+<SCRIPT LANGUAGE= "JavaScript" TYPE= "text/javascript">
+<!--
+function doublecheck() {
+var x = false;
+var y = false;
+var rex = /^[a-zA-Z0-9._-]+@+[a-zA-Z0-9.-]+\.+[a-zA-Z0-9.-]{2,4}$/;
+var rey = /^[a-zA-Z0-9]{5,}$/;
+var email = document.getElementById('Email').value;
+var pas = document.getElementById('Password').value;
+if(rex.test(email))
+{
+x=true;
+if(rey.test(pas))
+{
+y=true;
+}
+}
+if(x && y)
+{
+document.login.submit();
+}
+else
+{
+document.getElementById('errorMassage').innerHTML = "Email or password is incorrect";
+}
+}
+-->
+</script>
+</head>
+<body>
+<h1 style="color:white" align=center>Filebox</h1>
+<p align=center style="font-size: 20px">Leave your files here and get them anywhere!</p>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<div class="row">
+<div class="col-md-8">
+</div>
+<div class="col-md-4">
+<p>Log in to your Filebox!</p>
+<form name="login" action="filebox-main.html">
+<form name="login">
+<table>
+<thead></thead>
+<tbody>
+<tr>
+<th><bialy>Email</bialy></th>
+<th><input type="text" id="Email" value=""><br></th>
+</tr>
+<tr>
+<th><bialy>Password</bialy></th>
+<th><input type="password" id="Password" value=""><br></th>
+</tr>
+</tbody>
+</table>
+<input type="button" name = "Submit" 
+      value = "Login"
+      onClick = "doublecheck()">
+	  </form>
+<p id="errorMassage" style="color:red"></p>
+</form>
+<p>Don't have account?</p>
+<p>Don't worry, start now!</p>
+<a href="Filebox-register.html">Sigh up</a>
+</div>
+</div>
+</body>
+</html>

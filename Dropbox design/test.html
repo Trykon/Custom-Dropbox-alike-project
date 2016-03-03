@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing</title>
+
+<script LANGUAGE= "JavaScript" TYPE= "text/javascript">
+function domagic(){
+var v1 = document.getElementById("trick2").innerHTML;
+var v2 = "";
+var v3 = 1;
+if(v1.match(v2))
+{
+	document.getElementById("trick2").innerHTML = "Look there is more text there.";
+}
+if(!v1.match(v2))
+{
+	document.getElementById("trick2").innerHTML = "";
+}
+}
+</script>
+
+<script LANGUAGE= "JavaScript" TYPE= "text/javascript">
+function undomagic(){
+document.getElementById("trick2").innerHTML = "";
+}
+</script>
+
+</head>
+<body>
+<h1>Some testing with magic</h1>
+<p id="trick" onclick="domagic()">There is some text.</p>
+<p id="trick2" onclick="undomagic()"></p>
+</body>
+</html>

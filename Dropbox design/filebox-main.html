@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Bootstrap\bootstrap-3.3.5-dist\css\bootstrap.css">
+<link rel="stylesheet" href="main.css">
+<title>Filebox-main</title>
+</head>
+<body>
+<div>
+<h1 align=center><bialy>Filebox</bialy></h1>
+<h3 align=center style="font-size: 20px"><bialy>Leave your files here and get them anywhere!</bialy></h3>
+</div>
+
+<div class="headbar">
+<div class="row">
+<div class="col-md-10">
+<div class="nav">
+<button type="button" onclick="alert('Select files to upload')">Upload</button>
+<button type="button" onclick="alert('Select directory')">Download</button>
+<button type="button" onclick="alert('Deleted selected files')">Delete</button>
+</div>
+</div>
+<div class="col-md-2">
+<form action="filebox-login.html">
+    <input type="submit" value="Logout">
+</form>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-2">
+</div>
+<div class="col-md-8">
+<div class="srodek">
+<div>
+<table style="border-collapse:collapse; background-color:white">
+	<thead>
+		<tr style="border-bottom:1px solid black;">
+			<th style="padding:3px;">Files</th>
+			<th style="padding:3px;border-left:1px solid black;">Choose</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Test file</th>
+			<th><p align=center><input type="checkbox" name="file" value="1"><br></p></th>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-2">
+</div>
+</div>
+</body>
+</html>
